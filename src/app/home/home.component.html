@@ -1,0 +1,14 @@
+<h1 class="h1Style">Home</h1>
+<!--
+<button (click)="firstClick()">Click me</button>
+<hr>
+<button (dblclick)="dblClick()">Double click</button>
+<hr>
+-->
+<ul *ngIf="users">
+  <p>Page {{page}} of {{totalPages}} | total users: {{total}}</p>
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <p>{{ user.first_name }} {{ user.last_name }}</p>
+  </li>
+</ul>
