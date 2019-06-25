@@ -6,7 +6,8 @@
 <hr>
 -->
 <ul *ngIf="users">
-  <p>Page {{page}} of {{totalPages}} | total users: {{total}}</p>
+  <p>Page {{users.page}} of {{users.total_pages}} | total users: {{users.total}}</p>
+  <!-- <p><span *ngFor="let item of users.data; let i = index">{{i}}</span></p> -->
   <li *ngFor="let user of users.data">
     <img [src]="user.avatar">
     <p>{{ user.first_name }} {{ user.last_name }}</p>
