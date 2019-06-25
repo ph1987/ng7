@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
   //perPage: any;
   //page: any;
   //totalPages: any;
-
   constructor(private data: DataService) { }
 
   ngOnInit() {

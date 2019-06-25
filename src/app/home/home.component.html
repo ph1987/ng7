@@ -1,13 +1,6 @@
 <h1 class="h1Style">Home</h1>
-<!--
-<button (click)="firstClick()">Click me</button>
-<hr>
-<button (dblclick)="dblClick()">Double click</button>
-<hr>
--->
 <ul *ngIf="users">
   <p>Page {{users.page}} of {{users.total_pages}} | total users: {{users.total}}</p>
-  <!-- <p><span *ngFor="let item of users.data; let i = index">{{i}}</span></p> -->
   <li *ngFor="let user of users.data">
     <img [src]="user.avatar">
     <p>{{ user.first_name }} {{ user.last_name }}</p>
